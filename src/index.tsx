@@ -5,7 +5,9 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
 import store from './redux/store';
-import { CssBaseline } from '@mui/material';
+import { CssBaseline, ThemeProvider } from '@mui/material';
+import { theme } from './themes';
+import { ThemeProvider as StyleThemeProvider } from '@mui/styles';
 
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
@@ -13,8 +15,12 @@ const root = ReactDOM.createRoot(
 root.render(
     <React.StrictMode>
         <Provider store={store}>
-            <CssBaseline />
-            <App />
+            <ThemeProvider theme={theme}>
+                <StyleThemeProvider theme={theme}>
+                    <CssBaseline />
+                    <App />
+                </StyleThemeProvider>
+            </ThemeProvider>
         </Provider>
     </React.StrictMode>
 );
