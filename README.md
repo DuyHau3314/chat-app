@@ -48,13 +48,13 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 ## Convention
 
 ## Branch Naming Convention
-[feature] is for adding, refactoring or removing a feature
-[bugfix] is for fixing a bug
-[hotfix] is for changing code with a temporary solution and/or without following the usual process (usually because of an emergency)
-[test] is for experimenting outside of an issue/ticket
+[feature] is for adding, refactoring or removing a feature.
+[bugfix] is for fixing a bug.
+[hotfix] is for changing code with a temporary solution and/or without following the usual process (usually because of an emergency).
+[test] is for experimenting outside of an issue/ticket.
 
 ## Commit Naming Convention
-[feat] is for adding a new feature
-[fix] is for fixing a bug
-[refactor] is for changing code for peformance or convenience purpose (e.g. readibility)
-[chore] is for everything else (writing documentation, formatting, adding tests, cleaning useless code etc.)
+[feat] is for adding a new feature.
+[fix] is for fixing a bug.
+[refactor] is for changing code for peformance or convenience purpose (e.g. readibility).
+[chore] is for everything else (writing documentation, formatting, adding tests, cleaning useless code etc.).
