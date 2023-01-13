@@ -11,7 +11,6 @@ interface IMessage {
 export const MessageLeft = (props: IMessage) => {
 	const message = props.message ? props.message : "no message";
 	const timestamp = props.timestamp ? props.timestamp : "";
-	const photoURL = props.photoURL ? props.photoURL : "https://www.milton.edu/wp-content/uploads/2019/11/avatar-placeholder-250x300.jpg";
 	const displayName = props.displayName ? props.displayName : "No Name";
 	const classes = useStyles();
 
@@ -21,7 +20,7 @@ export const MessageLeft = (props: IMessage) => {
 		  <img
 			alt={displayName}
 			className={classes.avatar}
-			src={photoURL}
+			src={'/avatar-placeholder.jpg'}
 		  ></img>
 		  <div>
 			<div className={classes.displayName}>{displayName}</div>
